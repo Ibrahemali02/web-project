@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>complate order</title>
+    <style>
+        form {
+            background-color: rgb(150, 20, 10);
+            border-radius: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: rgb(222, 226, 4);
+            text-align: center;
+            font-size: x-large;
+            width: 90%;
+            display: inline-block;
+            box-shadow: 20px 10px 10px 2px rgb(222, 226, 4) inset, 20px 10px 10px rgb(150, 100, 50);
+            margin-left: 5%;
+            margin-top: 2%;
+            line-height: 30px;
+
+        }
+
+        .l {
+            color: rgb(255, 0, 0);
+            border: 1px solid;
+            border-radius: 50%;
+            margin-left: 40%;
+            margin-top: 2%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            text-transform: capitalize;
+            background-color: rgb(222, 226, 4);
+            width: 80%;
+            padding: 0 40px 0 40px;
+            white-space: nowrap;
+
+        }
+
+        .reset:hover {
+            background-color: red;
+            color: rgb(222, 226, 4);
+        }
+
+        .com:hover {
+            color: rgb(222, 226, 4);
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="complate order.php" method="post">
+        <div>
+            <h3>order complate</h3>
+            <br><br>
+            <label>name: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text"
+                name="name" placeholder="enter your name 'ibrahem ali'" required maxlength="50">
+            <br><br>
+            <label>address_in_details:</label> &nbsp;<input type="address" name="address"
+                placeholder="enter your address'tanta said st'" required maxlength="100">
+            <br><br>
+            <label>e-mail: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="email"
+                name="e-mail" placeholder="ibrahem@gmail.com" required maxlength="50">
+            <br><br>
+            <label>phone: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="number"
+                name="phone" placeholder="enter your phone '01*********'" required maxlength="11" min="0">
+            <br><br>
+            <input type="radio" name="r1" id="f" required> <label for="f">female</label>
+            <input type="radio" name="r1" id="m" required> <label for="m">male</label>
+            <br><br>
+            <input type="checkbox" name="r1" id="ck" required checked> <label for="ck">remember me</label>
+            <br><br>
+            <input type="datetime-local">
+            <br><br>
+            <input type="button" value="complated" class="com" name="complate">
+            <input type="reset" class="reset">
+            <br><br>
+        </div>
+    </form>
+    <section>
+        <label class="l">we are happy to serve you</label>
+    </section>
+
+</body>
+
+</html>

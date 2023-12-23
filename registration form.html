@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>registration form</title>
+    <style>
+        form {
+            background-color: rgb(150, 20, 10);
+            border-radius: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: rgb(222, 226, 4);
+            text-align: center;
+            font-size: x-large;
+            margin-top: 2%;
+            margin-left: 5%;
+            width: 90%;
+            height: 90%;
+            display: inline-block;
+            box-shadow: 20px 10px 10px 2px rgb(222, 226, 4) inset, 20px 10px 10px rgb(150, 100, 50);
+            line-height: 35px;
+        }
+
+        .l1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            text-transform: capitalize;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: rgb(222, 226, 4);
+            text-align: center;
+            display: inline-block;
+            margin-left: 35%;
+            margin-top: 1%;
+            color: rgb(255, 0, 0);
+            word-spacing: 5px;
+            width: 30%;
+
+        }
+
+        .bu:hover {
+            color: rgb(222, 226, 4);
+            background-color: green;
+        }
+
+        .re:hover {
+            color: rgb(222, 226, 4);
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <label class="l1" title="welcome to your place ">welcome to your place</label>
+    </section>
+    <form method="post" action="index.php">
+        <div>
+            <h3>registration form</h3>
+            <br>
+            <label id="n">name: </label> <input type="text" name="name" placeholder="enter your name 'ibrahem ali'"
+                required maxlength="50" for="n">
+            <br><br>
+            <label id="pa">password:</label> <input type="password" name="password"
+                placeholder="enter your password'1234....'" required maxlength="100" for="pa">
+            <br><br>
+            <label id="em">e-mail: </label>
+            <input type="email" name="email" placeholder="ibrahem@gmail.com" required maxlength="50" for="em">
+            <br><br>
+            <label id="ph">phone: </label> <input type="number" name="phone"
+                placeholder="enter your phone '01*********'" required maxlength="11" min="0" for="ph">
+            <br><br>
+            <input type="radio" name="radio" id="f" required> <label for="f">female</label>
+            <input type="radio" name="radio" id="m" required> <label for="m">male</label>
+            <br><br>
+            <input type="checkbox" name="check" id="ck" required checked> <label for="ck">rememberme?</label>
+            <br><br>
+            <input type="reset" class="re" name="reset">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="home page.html"><input type="submit" value="login" required class="bu" name="send"></a>
+        </div>
+    </form>
+
+</body>
+
+</html>

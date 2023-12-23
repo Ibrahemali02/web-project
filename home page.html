@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>wahet el ghroub resturent home page</title>
+    <style>
+        .dd {
+            width: 100%;
+
+        }
+
+        .picture {
+            border: 1px solid;
+            border-radius: 30px;
+
+        }
+
+        h3 {
+            font-size: 32px;
+            border: black solid 1px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .info {
+            border: 1px solid;
+            border-radius: 20px;
+            font-size: x-large;
+            background-color: rgb(243, 251, 248);
+            font-style: italic;
+        }
+
+        aside .link {
+            text-decoration: none;
+            border: solid 1px blue;
+        }
+
+        .i {
+            border: solid 1px;
+            border-radius: 20%;
+            box-sizing: border-box;
+            width: 19.5%;
+            white-space: 5%;
+        }
+
+        label {
+            font-style: oblique;
+        }
+
+        .l {
+            border: solid 1px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            align-items: start;
+
+        }
+
+
+        .h {
+            border: solid 1px;
+            border-radius: 20%;
+            text-align: center;
+            font-size: x-large;
+            background-color: rgb(243, 251, 248);
+            font-style: italic;
+        }
+
+        .ar {
+            margin-left: 15%;
+            background-color: rgb(243, 251, 248);
+            width: 500px;
+            height: 200px;
+
+        }
+
+        .di {
+            margin-left: 1200px;
+            padding: 20px;
+        }
+
+        .a {
+            border: none;
+            color: black;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        #tarb,
+        #kapap,
+        #cheken,
+        #meat,
+        #oriantal {
+            margin-left: 40px;
+        }
+
+        .send {
+            margin-left: 600px;
+        }
+
+        .send:hover {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <label> search:</label><input list="menu" name="menu"><br>
+        <datalist id="menu">
+            <option input="button" value="meat" for="meat"></option>
+            <option input="button" value="oriantal" for="oriantoal"></option>
+            <option input="button" value="kapap" for="kapap"></option>
+            <option input="button" value="tarb" for="tarb"></option>
+            <option input="button" value="cheken" for="cheken"></option>
+        </datalist>
+        <br>
+
+
+        <header>
+            <img src="C:\Users\LEGION\Desktop\صورة الموقع.jpg" class="picture" width="1495" height="400">
+
+        </header>
+        <div class="h">
+            <h2 id="n"></h2>
+            <script>
+                let text = "";
+                for (let i = 0; i < 5; i++) {
+                    text += i + "<br>"
+                }
+                decument.getElementbyid("n").innerHTML = text;
+
+            </script>
+        </div>
+
+
+        <hr>
+        <aside class="info">
+            <h3>resturent information</h3>
+            <label style=>address: tanta , gharbeya, el estad st </address></label><br>
+            <label style=>phone: 01027657821/01559665747</label><br>
+            <label style=>links:<a class="link" href="www.wahet el ghroub resturent.com" target="_blank"> wahet
+                    el ghroub resturent.facebook </a></label>
+            <br>
+            <label>specialization: midddel East food and catring</label>
+        </aside>
+        <hr>
+        <div class="dd">
+            <img src="C:\Users\LEGION\Desktop\oriantal.jpg" width="260" height="200" class="i">
+            <img src="C:\Users\LEGION\Desktop\ii.jpg" width="260" height="200" class="i">
+            <img src="C:\Users\LEGION\Desktop\كباب.jpg" width="260" height="200" class="i">
+            <img src="C:\Users\LEGION\Desktop\طرب.jpg" width="260" height="200" class="i">
+            <img src="C:\Users\LEGION\Desktop\فراخ.jpg" width="260" height="200" class="i">
+        </div>
+        <hr>
+        <section>
+            <div name="order" for="se">
+                <img src="C:\Users\LEGION\Desktop\oriantal.jpg" width="600" height="200" class="l" id="meat">
+                <textarea class="ar" minlength="1"
+                    placeholder="tell us about your exeriance with this plate"></textarea>>
+                <br>
+
+                <input type="checkbox" id="or1" name="order" required><label for="or1" name="o">order</label>
+
+                <label>platename:family</label>
+
+                <label>plateprice=450 L.E</label>
+                <br>
+
+                <img src="C:\Users\LEGION\Desktop\ii.jpg" width="600" height="200" class="l" id="oriantal">
+                <textarea class="ar" minlength="1" placeholder="tell us about your exeriance with this plate"
+                    name="text"></textarea>>
+                <br>
+
+                 <input type="checkbox" id="or2"
+                    name="o"><label for="or2" name="order">order</label>
+               <label>platename: oriantal breakfast</label>
+               <label>plateprice=380 L.E</label>
+                <br>
+
+                <img src="C:\Users\LEGION\Desktop\كباب.jpg" width="600" height="200" class="l" id="kapap">
+                <textarea class="ar" minlength="1" placeholder="tell us about your exeriance with this plate"
+                    name="text"></textarea>
+                <br>
+
+                </label><input type="checkbox" id="or3"
+                    name="o"><label for="or3" name="order">order</label>
+                <label>platename: large group</label>
+               <label>plateprice=400 L.E</label>
+                <br>
+
+                <img src="C:\Users\LEGION\Desktop\طرب.jpg" width="600" height="200" class="l" id="tarb">
+                <textarea class="ar" minlength="1" placeholder="tell us about your exeriance with this plate"
+                    name="text"></textarea>
+                <br>
+
+                <input type="checkbox" id="or4"
+                    name="o"><label for="or4" name="order">order</label>
+                <label>platename: cubles</label>
+                <label>plateprice=200 L.E</label>
+                <br>
+
+                <img src="C:\Users\LEGION\Desktop\فراخ.jpg" width="600" height="200" class="l" id="cheken">
+                <textarea class="ar" minlength="1" placeholder="tell us about your exeriance with this plate"
+                    name="text"></textarea>
+                <br>
+
+                </label> <input type="checkbox" id="or5"
+                    name="o"><label for="or5" name="order">order</label>
+                <label>platename: bigs</label>
+                <label>plateprice=320 L.E</label>
+                <br>
+                <br>
+                <br>
+                <br>
+               
+            </div>
+            <div>
+                <a href="comblate order.html"> <input type="button" value="complate order" class="send" id="se"
+                        name="complate"></a>
+            </div>
+
+            <br>
+    </form>
+
+
+</body>
+
+</html>
